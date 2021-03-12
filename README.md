@@ -1,40 +1,45 @@
-This api was created with NodeJs using express
+# Test | Mercado Libre | Back
 
-## Intallation
-1. Download and install NodeJS if they don't have it [https://nodejs.org/es/download/](https://nodejs.org/es/download/)
-2. Install all dependencies: `npm install`
+- Hecho por: Lizeth Nuñez
 
-3. run this project: `npm start`
+**Indice**
 
-## Available Scripts
+1. [Descripción](#description)
 
-In the project directory, you can run:
+2. [Instalación](#install)
 
-### `npm start`
+3. [End-Points](#endPoint)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3001/api/](http://localhost:3001/api/) to view it in the browser or postman.
 
-### `npm run build`
+<a id="description"></a>
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Descripción
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Este proyecto es el desarrollo de los requerimientos de la prueba enviada por Mercado libre en la capa back end.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Este proyecto fue generado con NodeJs using express
 
-## API
-- [http://localhost:3001/api/](http://localhost:3000/api/)
-    Returns an object to see that the api is started: `{message: 'Web api iniciada'}`
 
-- [http://localhost:3001/api/items?q='your filter search'](http://localhost:3001/api/items?q=Iphone11)
-    Returns an object with results of the filter applied: `{author:Object, categories:Array, items:Array}`
+<a id="install"></a>
 
-- [http://localhost:3001/api/items/:id](http://localhost:3000/api/items/MLA863083993)
- Returns an object with results of the id sent: `{author:Object, item:Object}`
+## Instalación
 
-## Deployment
+Para la correcta instalacion del proyecto se debe realizar los siguientes pasos:
 
-`npm run build`
+### 1. Descargar el proyecto
+
+- Dirigirse a la url `https://github.com/lizthin/test-ml-back`, clonar la rama master, ejecutar el script _npm install_ y posteriormente _npm run start_
+
+- Abrir el navegador con la ruta [http://localhost:3001](http://localhost:3001)
+
+NOTA: El proyecto front realiza peticiones al api que esta corriendo del proyecto back end, por esta razon es necesario que para el correcto funcionamiento de la prueba esten ejecutandose los dos al mismo tiempo
+
+<a id="endPoint"></a>
+
+## End Points
+-  La ruta [http://localhost:3001/api/](http://localhost:3000/api/)
+    debe retornar el mensaje: `{message: 'Web api iniciada'}`
+
+- Si se realiza la busqueda desde el navegador se debe realizar como el siguiente ejemplo, [http://localhost:3001/api/items?q='your filter search'](http://localhost:3001/api/items?q=Iphone11), adicional retorna un objeto con los filtros aplicados: `{author:Object, categories:Array, items:Array}`
+
+- Para la busqueda del detalle se debe realizar el cambio en el navegador como esta en el siguiente ejemplo [http://localhost:3001/api/items/:id](http://localhost:3000/api/items/MLA863083993), esperando que retorne un objeto similar a `{author:Object, item:Object}`
