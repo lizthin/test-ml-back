@@ -37,9 +37,9 @@ NOTA: El proyecto front realiza peticiones al api que esta corriendo del proyect
 <a id="endPoint"></a>
 
 ## End Points
--  La ruta [http://localhost:3001/api/](http://localhost:3000/api/)
+-  La ruta [http://localhost:3001/api/](http://localhost:3001/api/)
     debe retornar el mensaje: `{message: 'Web api iniciada'}`
 
 - Si se realiza la busqueda desde el navegador se debe realizar como el siguiente ejemplo, [http://localhost:3001/api/items?q='your filter search'](http://localhost:3001/api/items?q=Iphone11), adicional retorna un objeto con los filtros aplicados: `{author:Object, categories:Array, items:Array}`
 
-- Para la busqueda del detalle se debe realizar el cambio en el navegador como esta en el siguiente ejemplo [http://localhost:3001/api/items/:id](http://localhost:3000/api/items/MLA863083993), esperando que retorne un objeto similar a `{author:Object, item:Object}`
+- Para la busqueda del detalle se debe realizar el cambio en el navegador como esta en el siguiente ejemplo [http://localhost:3001/api/items/:id](http://localhost:3001/api/items/MLA863083993), esperando que retorne un objeto similar a `{author:Object, item:Object}`
