@@ -28,7 +28,7 @@ Para la correcta instalacion del proyecto se debe realizar los siguientes pasos:
 
 ### 1. Descargar el proyecto
 
-- Dirigirse a la url `https://github.com/lizthin/test-ml-back`, clonar la rama master, ejecutar el script _npm install_ y posteriormente _npm run start_
+- Dirigirse a la url `https://github.com/lizthin/test-ml-back`, clonar la rama master, ejecutar el script `npm install` y posteriormente `npm run start`
 
 - Abrir el navegador con la ruta [http://localhost:3001](http://localhost:3001)
 
